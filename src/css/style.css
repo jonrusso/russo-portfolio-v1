@@ -1,0 +1,162 @@
+body {
+    background-image: url(../imagens/fundo-site.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'Gemunu', monospace;
+    color: #f3f3f3;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px;
+
+}
+
+.card{
+
+    background-color: #070d12;
+    width: 570px;
+    border: 3px solid #e126d9;
+    border-radius: 8px;
+    overflow: hidden;
+    
+
+}
+
+.my-informations img{
+    width: 300px;
+    
+}
+
+.tabs img{
+    width: 48px;
+}
+
+.card .my-informations{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*alinha horizontalmente por causa do flex direction column não row*/
+    gap: 10px;
+}
+
+.card .my-informations img{
+    border-radius: 128px;
+    border: 6px solid #02d08f;
+    width: 252px;
+    height: 252px;
+}
+
+.card .my-informations .name {
+    font-size: 26px;
+}
+
+.card .my-informations .position {
+    font-size: 20px;
+    color: #b8bbc5;
+}
+
+.card .content {
+    background-color: black;
+    margin-top: 15px;
+
+}
+
+.card .content .tabs{
+    display: flex;
+}
+
+.card .tabs .tab {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.card .tabs img{
+    width: 30px;
+}
+
+.card .tabs .tab.selected{
+    background-color:  #262626;
+}
+
+.card .info-tabs{
+    background-color: #262626;
+}
+
+.card .tabs .tab:hover{
+    background: #414141;
+}
+
+.info-tabs .Information{
+    min-height: 260px;
+    padding: 20px;
+    display: none;
+}
+
+.info-tabs .Information.selected{
+    display: block;
+}
+
+
+.info-tabs .Sub-Title{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.info-tabs .Description{
+    font-size: 20px;
+    text-size-adjust: auto;
+    overflow-y: auto;
+    text-align: center;
+    max-height: 200px;
+
+}
+
+.info-tabs .Description span{
+    color: #02d08f;
+}
+
+.Networks{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.Networks li a{
+    background-color: red;
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out;
+    
+
+}
+.Networks li a:hover{
+    opacity: 0.6;
+    
+
+}
+
+.Networks .LinkedIn{
+    background-color: #1e87bd;
+}
+.Networks .Curriculum{
+    background-color: #06c185;
+
+}
+.Networks .GitHub{
+    background-color: #545454;
+
+}
